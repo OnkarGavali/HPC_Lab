@@ -1,3 +1,10 @@
+//Onkar Gavali
+//2019BTECS00037
+//B2
+//Assignment 3 q2
+// matrix multipliction
+//Parallel code 
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>

@@ -1,8 +1,17 @@
+//Onkar Gavali
+//2019BTECS00037
+//B2
+//Assignment 3 q2
+// matrix multipliction
+//Sequential code 
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <omp.h>
 #define N 250
+
+
 void add(int** a, int** b, int** c){
 	for(int i=0; i<N; i++){
 		for(int j=0; j<N; j++){
@@ -32,9 +41,11 @@ int main(){
 	int** a;
 	int** b;
 	int** c;
+	//size alocation
 	a = malloc(sizeof(int*) * N);
 	b = malloc(sizeof(int*) * N);
 	c = malloc(sizeof(int*) * N);
+	
 	for(int i=0; i<N; i++){
 		a[i] = malloc(sizeof(int) * N);
 		b[i] = malloc(sizeof(int) * N);
@@ -47,6 +58,6 @@ int main(){
 	start = omp_get_wtime();
 	add(a, b, c);
 	end = omp_get_wtime();
-	display(c);
+	//display(c);
 	printf("for N:%d Time taken (seq): %f\n",N, end - start);
 }

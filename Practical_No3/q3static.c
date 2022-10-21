@@ -1,4 +1,11 @@
-//Static Schedule:
+//Onkar Gavali
+//2019BTECS00037
+//B2
+//Assignment 3 q3
+// Demostrate use of stactic clause
+//parallel code
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <omp.h>

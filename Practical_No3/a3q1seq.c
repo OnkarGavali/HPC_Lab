@@ -1,8 +1,17 @@
+//Onkar Gavali
+//2019BTECS00037
+//B2
+//Assignment 3 q1
 // C Program to find the minimum scalar product of two vectors
 //(dot product)
+//Sequential code 
 #include <stdio.h>
 #include <time.h>
 #define n 100000
+
+//below 100000 seq is fatser
+
+
 int sort(int arr[])
 {
 	int i, j;
@@ -52,11 +61,11 @@ int main()
 	t = clock() - t;
 	double time_taken = ((double)t)/CLOCKS_PER_SEC;
 	printf("Time taken (seq): %f\n", time_taken);
-	int sum = 0;
+	long long int sum = 0;
 	for (i = 0; i < n; i++)
 	{
 		sum = sum + (arr1[i] * arr2[i]);
 	}
-	printf("%d\n", sum);
+	printf("%lld\n", sum);
 	return 0;
 }

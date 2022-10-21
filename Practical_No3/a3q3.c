@@ -1,12 +1,19 @@
+//Onkar Gavali
+//2019BTECS00037
+//B2
+//Assignment 3 q3
+// Demostrate use of nowait clause
+//parallel code
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <omp.h>
 #define N 10
-void hello_world(){
-	printf("Hello world\n");
+void noWaitFun(){
+	printf("This is no wait clause\n");
 }
-void bye(int i){
-	printf("Bye: %d\n", i);
+void forLoop(int i){
+	printf("In the for loop: %d\n", i);
 }
 int main(){
 	int* a = malloc(sizeof(int) * N);
@@ -17,8 +24,8 @@ int main(){
 	{
 		#pragma omp for nowait
 		for(int i=0; i<N; i++){
-			bye(i);
+			forLoop(i);
 		}
-		hello_world();
+		noWaitFun();
 	}
 }

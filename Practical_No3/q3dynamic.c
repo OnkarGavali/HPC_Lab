@@ -1,3 +1,10 @@
+//Onkar Gavali
+//2019BTECS00037
+//B2
+//Assignment 3 q3
+// Demostrate use of dynamic clause
+//parallel code
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <omp.h>

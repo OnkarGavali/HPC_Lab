@@ -41,9 +41,7 @@ void consumer()
 	// Increase the number of empty
 	// slots by 1
 	++empty;
-	printf("\nConsumer consumes "
-	"item %d",
-	x);
+	printf("\nConsumer consumes item %d",x);
 	x--;
 	// Increase mutex value by 1
 	++mutex;
